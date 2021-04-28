@@ -12,7 +12,6 @@ class BPR(nn.Module):
 		"""		
 		self.embed_user = nn.Embedding(user_num, factor_num)
 		self.embed_item = nn.Embedding(item_num, factor_num)
-
 		nn.init.normal_(self.embed_user.weight, std=0.01)
 		nn.init.normal_(self.embed_item.weight, std=0.01)
 

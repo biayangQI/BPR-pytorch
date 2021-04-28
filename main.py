@@ -71,7 +71,7 @@ train_dataset = data_utils.BPRData(
 test_dataset = data_utils.BPRData(
 		test_data, item_num, train_mat, 0, False)
 train_loader = data.DataLoader(train_dataset,
-		batch_size=args.batch_size, shuffle=True, num_workers=4)
+		batch_size=args.batch_size, shuffle=True, num_workers=16)
 test_loader = data.DataLoader(test_dataset,
 		batch_size=args.test_num_ng+1, shuffle=False, num_workers=0)
 
